@@ -1,22 +1,31 @@
 *{
     box-sizing: border-box;
     margin:0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
-.navegacion{
-
-    background-color:green;
+nav{
+    background-color:#72c8f1;
     color:white;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    justify-content: space-between;
+    display:flex;
+    align-items: center;
+    justify-content: ce;
+    height: 40px;
     padding: 10px;
     border: 15px;
-    align-items: center;
-    font-size: 10px;
 }
+
+.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    text-justify: auto;
+
+
+}
+.card-body{
+background-color: #e4f5fd;
+}
+
 .mapa{
     display: flex;
     justify-content: center;
@@ -52,14 +61,20 @@
     
 }
 
-.imagen-bateria{
-    width: 20px;
-    height: 20px;
-}
+
 .datos-basicos{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-6{
+    align-items: center;
 }
 
 h3{
