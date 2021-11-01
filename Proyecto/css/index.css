@@ -1,0 +1,39 @@
+/*barra navegacion*/
+*{
+  
+}
+.nav-barr {
+    background: rgb(249, 163, 66);
+    color: rgb(44, 88, 8);
+    text-align: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+  }
+  .nav-barr:hover {
+    background: rosybrown;
+    display: flex;
+  }
+  nav {
+    background: rgb(249, 163, 66);
+    padding: 10px;
+  }
+  .centrado {
+    margin-top: 7%;
+    margin-left: 36%;
+    margin-right: 36%;
+  }
+  /*Intento de alinear parrafo */
+  .padre {
+    margin-top: 5%;
+    margin-left: 27%;
+    height: 220px;
+    text-align: center;
+    width: 700px;
+  }
+  #pie{
+    text-align: center;
+  }
+  
