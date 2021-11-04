@@ -32,6 +32,7 @@ h5{
 nav {
     color: black;
     text-decoration: none;
+    background-color: #B4E79E !important;
 }
 
 li {
@@ -41,12 +42,17 @@ li {
 .encabezado {
 height: 30vw;
     background-repeat: no-repeat;
-    background: url(img/fondo-header.png) no-repeat center top fixed;
+    background: url(.img/fondo-header.png) no-repeat center top fixed;
     background-size: 100%;
 
 
 }
 
+.usuarios{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;   
+}
 
 
 
