@@ -3,12 +3,11 @@ h2 {
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 400;
     text-align: center;
-    color: rgb(107, 177, 107);;
+    color: rgb(107, 177, 107);
     text-transform: uppercase;
 }
 
-h4,
- {
+h4 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: 600;
     text-align: center;
