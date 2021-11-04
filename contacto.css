@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(253, 253, 253);
+    font-family: monospace;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0green, 0blue, 4alpha);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+min-height: 100px;
+max-height: 200px;
+max-width: 410px;
+}
+
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover{
+cursor: pointer;
+}
+
+@media ( max-width:480px ) {
+form {
+    width: 100px;
+}
+} 
+
+header{
+    width: 100vw;
+
+}
+.logo-nombre{
+    display: flex !important;
+}
+
+
+#bloque-redes-sociales i {
+    color: black;
+    padding: 10px;
+    background-color: #B4E79E;
+}
+
+
+
+  h5{
+      background-color: white;
+      color: black;
+      padding: 5px;
+      border-radius: 15px;
+  }
+
+  .navbar{
+    animation: bounce 0.5s;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke !important;
+    color: black !important;
+    font-weight: 900;
+  }
+
+  
+  @keyframes bounce {
+      0% {
+          padding-bottom: 0px;
+      }
+      50% {
+          padding-bottom: 10px
+      }
+      100% {
+          padding-bottom: 0px;
+      }/**/
+  }
+
+  ul.nav a:hover { 
+      background-color: #B4E79E;
+     }
+
+
+    
+    /* footer */
+
+.footer-style {
+    padding-top: 10px;
+    background-color: #2C3E50;
+    color: white;
+    width: 100vw;
+    font-size: 10px !important;
+
+}
+
+footer h4 {
+  margin-bottom: 10px;
+    font-weight: 600;
+}
+footer .footer-above {
+  padding-top: 2
+0px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 25px;
+}
+footer .footer-below {
+  padding: 0px 0;
+  background-color: #233140;
+}
+
+.input-group{
+    font-size: 10px !important;
+}
+
+#bloque-redes-sociales{
+    margin-top: 15px;
+    border: 15px;
+    }
+.social-media:hover{
+    background-color: white;
+   
+    }
+
+
+
+h6{
+    font-size: 13px !important;
+    font-weight: 100;
+}
+
+.btn{
+    padding-left: 15;
+}
+
+.contactanos-text:hover{
+    color: #B4E79E;
+}
