@@ -1,93 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/img/logo.png">
+    <link rel=" preconnect " href="https://fonts.googleapis.com ">
+    <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&family=Zen+Kaku+Gothic+New:wght@300&display=swap "
+        rel="stylesheet ">
+    <link rel="stylesheet " href="suscripcion.css ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " rel="stylesheet "
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 " crossorigin="anonymous ">
+    <title>¡Suscribite!</title>
 </head>
 
-<body>
-    <header class="encabezado">
-        <nav class="barra-navegacion">
+<body class>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous ">
+    </script>
 
+    <header class="container-fluid" id="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
+            <div class="container-fluid">
+                <div id="logo-nombre">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" id="imagen-logo-header" width="100px"
+                            height="100px" alt="logo" ml-2></a>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active " style='color:black' aria-current="page"
+                                href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style='color:black' href="/geopet.html">Sobre GeoPet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style='color:black' href="/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style='color:black' href="/formulario-registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style='color:black' href="/formulario ingreso.html">Login</a>
+                        </li>
+                        <li id="importante-link" class="nav-item">
+                            <a class="nav-link resaltado-button"
+                                style='color:white; background-color: rgb(107, 177, 107); border-radius: 15px;'
+                                href="/suscripcion.html">Planes y suscripciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>Obtené Premium gratis por 1 mes</h1>
-        <p>Después, solo cuesta $ 300 por mes. Cancelá cuando quieras.</p>
-        <button class="botones-inicio">Contratar</button>
-        <button class="botones-inicio">Mas informacion</button>
+
+        <div class="encabezado container-fluid ">
+            <div class="texto-encabezado text-center">
+                <h1>Obtené Premium gratis por 1 mes</h1>
+                <p>Después, solo cuesta $ 300 por mes. Cancelá cuando quieras.</p>
+                <button type="button " class="btn btn-outline-dark ">Contratar</button>
+                <button type="button " class="btn btn-outline-dark ">Mas informacion</button>
+            </div>
+        </div>
     </header>
-    <section class="beneficios-premium">
+
+    <section class="beneficios-premium container-fluid p-5 text-center" id="beneficios-suscripcion">
         <h2>Beneficios de la suscripcion premium</h2>
-        <div class="beneficios">
-            <img src="img/muchas-mascotas.png" alt="muchas-mascotas" width="200px">
-            <h3>Todas las mascotas que quieras</h3>
-            <p>Podes añadir a tu perro, gato o tortuga</p>
-        </div>
-        <div class="beneficios">
-            <img src="/img/historial (2).png" alt="historial" width="200px">
-            <h3>Historial desde el dia uno</h3>
-            <p>Todos los movimientos de tu mascota desde que contratas</p>
-        </div>
-        <div class="beneficios">
-            <img src="/img/ubicacion.png" alt="historial " width="200px">
-            <h3>Ubicacion en tiempo real mas precisa</h3>
-            <p>Que tu amigo se pierda o desaparezca por horas, ya no es problema</p>
-        </div>
-        <div class="beneficios">
-            <img src="/img/veterinaria.png" alt="veterinaria" width="200px">
-            <h3>Recordatorio de visita a la vete</h3>
-            <p>Para que tambien cuides la salud de tu mascota</p>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="img/historial.png " alt="historial" width="160px" img-fluid>
+                <div class="card-body ">
+                    <h5 class="card-title ">Historial desde el dia 1</h5>
+                    <p class="card-text ">Si tenes mala memoria, vas a tener a mano todos los movimientos de tu mascota
+                        desde que te suscribis.</p>
+                </div>
+            </div>
+               <div class="col-sm-3">
+                <img src="img/muchas-mascotas.png " alt="mascotas " width="160px " img-fluid>
+                <div class="card-body ">
+                    <h5 class="card-title ">Todas tus mascotas</h5>
+                    <p class="card-text ">Podes añadir todas las mascotas que desees: tu perro, tu gato e incluso tu
+                        tortuga.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="img/ubicacion.png" alt="ubicacion" width="110px" img-fluid>
+                <div class="card-body ">
+                    <h5 class="card-title ">Ubicacion mas precisa.</h5>
+                    <p class="card-text ">Que tu amigo, desaparezca por horas, ya no es un problema! Vas a poder saber
+                        donde esta en tiempo real.</p>
+                </div>
+            </div>
+   <div class="col-sm-3">
+                <img src="img/veterinaria.png " alt="veterinaria" width="160px " img-fluid>
+                <div class="card-body ">
+                    <h5 class="card-title ">Recordatorio para asistir a la vete</h5>
+                    <p class="card-text ">Como sabemos que para vos tambien es importante la salud de tu mascota, te
+                        recordamos sus visitas al veterinario.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <main class="container-fluid " id="suscripciones ">
+        <div class="row p-5 " id="suscripciones">
+            <div class="col-sm-6 text-center ">
+                <h3> <svg xmlns="http://www.w3.org/2000/svg " width="30" fill="currentColor " class="bi bi-gift "
+                        viewBox="0 0 16 16 ">
+                        <path
+                            d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5
+        1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z " />
+                    </svg>Suscripcion free</h3>
+                <p>1 cuenta</p>
+                <h4>Beneficios</h4>
+                <ul class="beneficios ">
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="30 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>Historial de una semana</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>1 sola mascota</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>Noticias todos los meses </li>
+                </ul>
+                <button type="button " class="btn btn-outline-dark ">Contratar</button>
+            </div>
+            <div class="col-sm-6 text-center">
+                <h3> <svg xmlns="http://www.w3.org/2000/svg " width="30 " fill="currentColor " class="bi bi-cash-coin "
+                        viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd "
+                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z " />
+                        <path
+                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255
+        1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z " />
+                        <path
+                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z " />
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z " />
+                    </svg>Suscripcion premium</h3>
+                <p> Hasta 3 cuentas</p>
+                <form>
+                    <p>Elegi tu plan:</p>
 
-    <main class="suscripciones">
-        <div class="suscripcion-free">
-            <h3>Suscripcion free</h3>
-            <p>1 cuenta</p>
-            <h4>Beneficios</h4>
-            <ul>
-                <li>Historial de una semana</li>
-                <li>1 sola mascota</li>
-                <li>Noticias todos los meses </li>
-            </ul>
-            <button class="contratar">Contratar</button>
-        </div>
+                    <div class="mensual ">
+                        <label for="mensual "><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 "
+                                fill="currentColor " class="bi bi-bell " viewBox="0 0 16 16 ">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0
+        0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z " />
+                            </svg> Suscripcion mensual</label>
+                        <input type="radio" id="mensual " name="suscripcion " value=" ">
+                        <ul>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>$300 todos los meses.</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>Primer mes gratis</li>
+                        </ul>
+                    </div>
 
-        <div class="suscripcion-premium">
-            <h3>Suscripcion premium</h3>
-            <p> Hasta 3 cuentas</p>
-
-            <form>
-                <p>Elegi tu plan:</p>
-                <input type="radio" id="mensual" name="suscripcion" value="">
-                <label for="mensual">Mensual</label>
-                <p>$300 todos los meses.</p>
-                <p>Primer mes gratis</p>
-
-                <input type="radio" id="anual" name="suscripcion" value=" phone ">
-                <label for="anual ">Suscripcion anual</label>
-                <p>$2800 una sola vez al año</p>
-                <p>Descuento del 20%.</p>
-                <p>Primer mes gratis</p>
-
-            </form>
-
-            <h4>Beneficios</h4>
-            <ul>
-                <li>Historial desde el dia 1</li>
-                <li>La cantidad de mascotas que quieras</li>
-                <li>Ubicacion de tu mascota en tiempo real y con mayor presicion</li>
-                <li>Recomendaciones relacionadas a tu mascota</li>
-                <li>Recordatorios de visita al veterinario</li>
-            </ul>
-            <button class="contratar ">Contratar</button>
+                    <div class="anual ">
+                        <label for="anual"><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 "
+                                fill="currentColor " class="bi bi-bell " viewBox="0 0 16 16 ">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0
+        0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z " />
+                            </svg>Suscripcion anual</label>
+                        <input type="radio" id="anual " name="suscripcion " value=" ">
+                        <ul>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>$2800 una sola vez al año.</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>Primer mes gratis</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                </svg>Descuento del 20%.</li>
+                        </ul>
+                    </div>
+                </form>
+                <h4>Beneficios</h4>
+                <ul class="beneficios ">
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>Historial desde el dia 1</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>La cantidad de mascotas que quieras</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>Ubicacion de tu mascota en tiempo real y con mayor presicion</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg></i>Recomendaciones relacionadas a tu mascota</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor "
+                            class="bi bi-check2-square " viewBox="0 0 16 16 ">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z " />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z " />
+                        </svg>Recordatorios de visita al veterinario</li>
+                </ul>
+                <button type="button " class="btn btn-outline-dark ">Contratar</button>
+            </div>
         </div>
     </main>
 
+    <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h4>Grupo 3</h4>
+                    <h6>
+                        Julieta Llanos <br />
+                        Virginia Mercado<br />
+                        Gustavo Ezequiel Miarka <br />
+                        Rocio Zarate Calviño
+                    </h6>
+                </div>
+                <div class="col-md-4 footer-col">
 
+                    <h4>Newsletter</h4>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Ingresa tu mail">
+                        <span class="input-group-btn">
+                            <button class="btn btn-outline-light" type="submit">Suscribirse</button>
+                        </span>
+
+                    </div>
+                    <div id="bloque-redes-sociales">
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram social-media"
+                                title="Instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook social-media"
+                                title="Facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa fa-twitter social-media"
+                                title="Twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>Geo pet</h4>
+                    <h6>Sigue a tu amigo perruno o felino desde la comodidad de tu celular gracias Geo PET. Registra tu
+                        mascota con su número de Geotag para ver su ubicación exacta, en todo momento.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
