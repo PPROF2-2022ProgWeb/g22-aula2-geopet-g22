@@ -14,41 +14,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top" >
-
-        <div class="container-fluid">
-            <div id="logo-nombre">
-          <a class="navbar-brand" href="/index.html"><img src="/img/logo geo pet.png" id="imagen-logo-header" width="168" height="76" alt=""></a>
-          
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top" >
+    
+            <div class="container-fluid">
+                <div id="logo-nombre">
+              <a class="navbar-brand" href="index.html"><img src="img/logo geo pet.png" id="imagen-logo-header" width="168" height="76" alt=""></a>
+              
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active " style='color:black' aria-current="page" href="/perfilusuario.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"style='color:black' href="/form-mascota.html">Mascotas</a>
+                    
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"style='color:black' href="/mapa.html">Mapa</a>
+                    </li>
+                    </ul>                
+                      </div> 
+              </div>
             </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active " style='color:black' aria-current="page" href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"style='color:black' href="/beneficios.html">Sobre GeoPet</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"style='color:black' href="/contacto.html">Contactanos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"style='color:black' href="/form-registro.html">Registro</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" style='color:black' href="/form-login.html">Login</a>
-                </li>
-                <li id="importante-link" class="nav-item">
-                    <a class="nav-link resaltado-button" style='color:white; background-color: green; border-radius: 15px;' href="/suscripcion.html">Planes y suscripciones</a>
-                  </li>
-              </ul>
-                       
-          </div>
-        </div>
-      </nav>
+          </nav>
+        </header>
     <section class="seccion-perfil-usuario">
         <div class="perfil-usuario-header">
             <div class="perfil-usuario-portada">
@@ -101,25 +95,22 @@
                     </h6>
                 </div>
                 <div class="col-md-4 footer-col">
-                    
-                    <h4>Newsletter</h4>
-                    <div class="input-group">
-                         <input type="email" class="form-control" placeholder="Ingresa tu mail">
-                         <span class="input-group-btn">
-                         <button class="btn btn-outline-light" type="submit">Suscribirse</button>
-                         </span>    
+                    <a href="/contactanos.html" style='color:white; text-decoration: none;'> <h4 class="contactanos-text">Contactanos</h4></a> 
+                    <p> Asistencia las 24 hs, todos los días.</p>
+                    <div id="bloque-redes-sociales">
+                        <a href="https://www.instagram.com/" ><i class="fa fa-instagram social-media"  title="Instagram"></i></a> 
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook social-media" title="Facebook"></i></a> 
+                        <a href="https://www.twitter.com/"><i class="fa fa-twitter social-media" title="Twitter"></i></a>               
+                            </div>
                          
-                </div>
-                <div id="bloque-redes-sociales">
-                <a href="https://www.instagram.com/" ><i class="fa fa-instagram social-media"  title="Instagram"></i></a> 
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook social-media" title="Facebook"></i></a> 
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter social-media" title="Twitter"></i></a>               
-            </div>       
                     </div>
+                       
+                    
                 <div class="col-md-4 footer-col">
                     <h4>Geo pet</h4>
                     <h6>Sigue a tu amigo perruno o felino desde la comodidad de tu celular gracias Geo PET. Registra tu mascota con su número de Geotag para ver su ubicación exacta, en todo momento.</h6>
                 </div>
+            </div> 
             </div>
         </div>
     </footer>
