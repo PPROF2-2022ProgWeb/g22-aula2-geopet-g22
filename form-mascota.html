@@ -33,7 +33,7 @@
                       <a class="nav-link active " style='color:black' aria-current="page" href="/perfilusuario.html">Perfil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"style='color:black' href="/mascotas.html">Mascotas</a>
+                      <a class="nav-link"style='color:black' href="/form-mascota.html">Mascotas</a>
                     
                     </li>
                     <li class="nav-item">
@@ -55,14 +55,14 @@
                     <div class="mb-3">
                         <h3 id="titulo">Nueva Mascota</h3>
                         <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputnombre" autocomplete="off" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="inputnombre" autocomplete="off" aria-describedby="emailHelp" required>
                         <label for="exampleDataList" class="form-label">Tipo</label>
                         <select class="form-select" aria-label="Default select example">
                             <option value="1">Perro</option>
                             <option value="2">Gato</option>
                           </select>
                         <label for="exampleInputEmail1" class="form-label">Cumpleaños</label>
-                        <input type="date" class="form-control" id="inputdatetime" aria-describedby="emailHelp">
+                        <input type="date" class="form-control" id="inputdatetime" aria-describedby="emailHelp" required>
                         <label for="exampleDataList" class="form-label">Género</label>
                         <select class="form-select" aria-label="Default select example">
                             <option value="1">Hembra</option>
@@ -74,11 +74,11 @@
                             <option value="2">No</option>
                         </select>
                         <label for="exampleInputEmail1" class="form-label">ID Chip</label>
-                        <input type="text" class="form-control" id="inputidchip" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="inputidchip" aria-describedby="emailHelp" required>
                         <label for="exampleInputPassword1" class="form-label">Altura (en cm.)</label>
-                        <input type="number" class="form-control" id="inputpassword">
+                        <input type="number" class="form-control" id="inputpassword" required>
                         <label for="exampleInputPassword1" type="number" class="form-label">Peso (en kg.)</label>
-                        <input type="number" class="form-control" id="inputpassword22">
+                        <input type="number" class="form-control" id="inputpassword22" required>
                     </div>
                     <button type="submit" class="btn btn-primary" id="boton">Registrar mascota</button>
                 </form>
