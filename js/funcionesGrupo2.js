@@ -30,4 +30,34 @@ document.getElementById("#boton-eliminar-mascota").onclick = function() {
       })
 }
 
+function comprobar() {
+  var nombre = document.getElementById("inputnombre").value;
+  var cumpleaños = document.getElementById("inputcumpleaños").value;
+  var chip = document.getElementById("inputchip").value;
+  var altura = document.getElementById("inputaltura").value;
+  var peso = document.getElementById("inputpeso").value;
+  if (nombre == "" || cumpleaños == "" || chip =="" || altura =="" || peso =="") {
+      alert("Faltan completar campos!!"); 
+  } else {
+  alert("Operacion exitosa, mascota registrada!!");
+  }
+}
+
+function comprobar2() {
+  var nombre = document.getElementById("inputnombre").value;
+  var apellido = document.getElementById("inputapellido").value;
+  var telefono = document.getElementById("inputtelefono").value;
+  var mail = document.getElementById("inputmail").value;
+  var password = document.getElementById("inputpassword").value;
+  var password2 = document.getElementById("inputpassword2").value;
+  if (nombre == "" || apellido == "" || telefono =="" || mail =="") {
+      alert("Faltan completar campos!!"); 
+  } else if (password!=password2) {
+    alert("Los campos de contraseña no coinciden");
+  } else {
+    alert("Operacion exitosa,usuario registrado!!");
+  }
+}
+
+
     
