@@ -39,7 +39,7 @@ function comprobar() {
   if (nombre == "" || cumpleaños == "" || chip =="" || altura =="" || peso =="") {
       alert("Faltan completar campos!!"); 
   } else {
-  alert("Operacion exitosa, mascota registrada!!");
+  alert("Operación exitosa, mascota registrada!!");
   }
 }
 
@@ -50,14 +50,11 @@ function comprobar2() {
   var mail = document.getElementById("inputmail").value;
   var password = document.getElementById("inputpassword").value;
   var password2 = document.getElementById("inputpassword2").value;
-  if (nombre == "" || apellido == "" || telefono =="" || mail =="") {
+  if (nombre == "" || apellido == "" || telefono =="" || mail =="" || password =="" || password2=="") {
       alert("Faltan completar campos!!"); 
   } else if (password!=password2) {
-    alert("Los campos de contraseña no coinciden");
+    alert("Los campos de contraseña no coinciden!!");
   } else {
-    alert("Operacion exitosa,usuario registrado!!");
+    alert("Operación exitosa, usuario registrado!!");
   }
 }
-
-
-    
