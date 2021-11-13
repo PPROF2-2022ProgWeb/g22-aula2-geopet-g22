@@ -10,24 +10,24 @@ function calculadoraEdad(fecha){
     return edadMascota
 }
 
-document.getElementById("#boton-eliminar-mascota").onclick = function() {
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
-        }
-      })
+function eliminarMascota(){
+  Swal.fire({
+    title: '¿Estás seguro que querés eliminar esta mascota?',
+    text: "Una vez eliminada, no podrás recuperar el registro.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Eliminar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Eliminado',
+        'El registro de tu mascota fue eliminado',
+        'success'
+      )
+    }
+  })
 }
 
 function comprobar() {
