@@ -57,9 +57,9 @@
                       <div class="col-md-8">
                         <div class="card-body">
                         <h5 class="card-title">Cooper </h5>    
-                         <ul>
+                         <ul id="listado-mascota">
                           <li> <i class="fa fa-paw"></i> Tipo de Mascota: Perro</li>
-                          <li> <i class="fa fa-birthday-cake"></i> Fecha de nacimiento: 5/10/2021</li>
+                          <li> <i class="fa fa-birthday-cake"></i> Fecha de nacimiento: 5/10/2019</li>
                           <li> Género: Macho</li>
                           <li> Castrado: Si</li>
                           <li> ID Chip: 5050</li>
@@ -72,7 +72,9 @@
                               <button id="boton-ubicacion-mapa"  type="button" class="btn btn-outline-success">
                                 <a href="/mapa.html"> <i class="fa fa-location-arrow"></i> Ver ubicación en mapa</a></button>
                           </div>
+                          
                               <div class="btn-group" role="group" aria-label="Basic example">
+                              <button class="btn btn-outline-success" onclick="mostrarEdad()">Calcular edad</button>
                               <button type="button" class="btn btn-secondary btn-success">Editar</button>
                               <button onclick="eliminarMascota()" type="button"  id ="boton-eliminar-mascota" class="btn btn-secondary btn-danger">Eliminar</button>
                             </div>

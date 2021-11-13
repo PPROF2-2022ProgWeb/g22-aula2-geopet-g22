@@ -1,14 +1,14 @@
 /* Función cálculo de edad*/
-function calculadoraEdad(fecha){
-    var hoy = new Date();
-    var fechaNacimientoMascota = new Date (fecha)
-    var edadMascota = hoy.getFullYear() - fechaNacimientoMascota.getFullYear();
-    var meses = hoy.getMonth() -fechaNacimientoMascota.getMonth();
-    if(meses <0 || m === 0 && hoy.getDate() < fechaNacimientoMascota.getDate()){
-        edadMascota--
-    }
-    return edadMascota
+function calcularEdad(f1, f2){
+  f2 = f2 || new Date();
+  var diferencia = f2.getTime() - f1.getTime();
+  return Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
 }
+function mostrarEdad(){
+  alert( "La edad de tu mascota es "+ calcularEdad(new Date(2019, 10, 5)) +" años."); 
+  }
+
+  /* Función alerta de eliminación de mascota*/
 
 function eliminarMascota(){
   Swal.fire({
@@ -16,8 +16,8 @@ function eliminarMascota(){
     text: "Una vez eliminada, no podrás recuperar el registro.",
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
     confirmButtonText: 'Eliminar'
   }).then((result) => {
     if (result.isConfirmed) {
