@@ -21,7 +21,7 @@
 
             <div class="container-fluid">
                 <div id="logo-nombre">
-              <a class="navbar-brand" href="#"><img src="img/logo geo pet .png" id="imagen-logo-header" width="168" height="76" alt=""></a>
+              <a class="navbar-brand" href="/index.html"><img src="img/logo geo pet.png" id="imagen-logo-header" width="168" height="76" alt=""></a>
               
                 </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
                       <a class="nav-link active " style='color:black' aria-current="page" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"style='color:black' href="/geopet.html">Sobre GeoPet</a>
+                      <a class="nav-link"style='color:black' href="/beneficios.html">Sobre GeoPet</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"style='color:black' href="/contactanos.html">Contactanos</a>
+                      <a class="nav-link"style='color:black' href="/contacto.html">Contactanos</a>
                     </li>
                     
                     <li class="nav-item">
@@ -60,22 +60,23 @@
                 <form class="form-horizontal col-sm-5 col-md-8 col-lg-3" style="margin-left: 3%;">
                     <div class="mb-3">
                         <h3 id="titulo">Formulario de Registro</h3>
-                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputnombre" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="inputapellido" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="inputtelefono" aria-describedby="emailHelp">
-                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="inputmail" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1" class="form-label" id="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="inputnombre" minlength="2" maxlength="20" aria-describedby="emailHelp" required>
+                        <label for="exampleInputEmail1" class="form-label" id="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="inputapellido" minlength="2" maxlength="20" aria-describedby="emailHelp" required>
+                        <label for="exampleInputEmail1" class="form-label" id="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputtelefono" min="3" max="15" aria-describedby="emailHelp" required>
+                        <label for="exampleInputEmail1" class="form-label" id="mail">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputmail" aria-describedby="emailHelp" required>
                         
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="inputpassword">
-                        <label for="exampleInputPassword1" class="form-label">Repita su Contraseña</label>
-                        <input type="password" class="form-control" id="inputpassword22">
+                        <label for="exampleInputPassword1" class="form-label" id="password">Contraseña</label>
+                        <input type="password" class="form-control" id="inputpassword" required>
+                        <label for="exampleInputPassword1" class="form-label" id="password2">Repita su Contraseña</label>
+                        <input type="password" class="form-control" id="inputpassword2" required>
                         <div id="emailHelp" class="form-text">Nunca compartiremos sus datos con nadie más</div>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="boton">Registrarse</button>
+                    <div id="alertboton"></div>
+                    <button type="submit" class="btn btn-primary" id="boton" onclick="comprobar2()">Registrarse</button>
                   </form>
             </div>
         </section>
@@ -103,9 +104,9 @@
                          
                 </div>
                 <div id="bloque-redes-sociales">
-                <a href="https://www.instagram.com/" ><i class="fa fa-instagram social-media"  title="Instagram"></i></a> 
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook social-media" title="Facebook"></i></a> 
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter social-media" title="Twitter"></i></a>               
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram social-media"  title="Instagram"></i></a> 
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook social-media" title="Facebook"></i></a> 
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter social-media" title="Twitter"></i></a>               
             </div>       
                     </div>
                 <div class="col-md-4 footer-col">
@@ -115,6 +116,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/funcionesGrupo2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

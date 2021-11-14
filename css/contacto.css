@@ -1,15 +1,57 @@
-#foto-mascota{
-    width: 142%;
-}
-#boton{
-    margin-bottom: 15%;
-}
 body {
-    overflow-x: hidden;
+    background-color: rgb(253, 253, 253);
+    font-family: monospace;
 }
-section{
-    padding-top: 2%;
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0green, 0blue, 4alpha);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
 }
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+min-height: 100px;
+max-height: 200px;
+max-width: 410px;
+}
+
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover{
+cursor: pointer;
+}
+
+@media ( max-width:480px ) {
+form {
+    width: 100px;
+}
+} 
+
 header{
     width: 100vw;
 
@@ -19,28 +61,13 @@ header{
 }
 
 
-#bloque-redes-sociales i {
-    color: black;
-    padding: 10px;
-    background-color: #B4E79E;
-}
-
-
-
-  h5{
-      background-color: white;
-      color: black;
-      padding: 5px;
-      border-radius: 15px;
-  }
 
   .navbar{
     animation: bounce 0.5s;
     font-family: 'Poppins', sans-serif;
-    background-color: whitesmoke !important;
+    background-color: #B4E79E !important;
     color: black !important;
     font-weight: 900;
-    padding-right: 1%;
   }
 
   
@@ -57,7 +84,7 @@ header{
   }
 
   ul.nav a:hover { 
-      background-color: #B4E79E;
+      background-color: white;
      }
 
 
@@ -102,7 +129,18 @@ footer .footer-below {
     background-color: white;
    
     }
+i{
+    color: black;
+    padding: 10px;
+    background-color: #B4E79E;
+}
 
+h5{
+      background-color: white;
+      color: black;
+      padding: 5px;
+      border-radius: 15px;
+  }
 
 
 h6{
@@ -112,8 +150,4 @@ h6{
 
 .btn{
     padding-left: 15;
-}
-
-.contactanos-text:hover{
-    color: #B4E79E;
 }

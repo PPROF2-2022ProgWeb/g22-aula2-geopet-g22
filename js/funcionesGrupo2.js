@@ -109,4 +109,3 @@ function mostrarDatos() {
   var altura = params.get("altura")
   altura1.innerHTML = `${nombre} mide ${altura} cm`
 }
-
