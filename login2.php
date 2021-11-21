@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Geo Pet</title>
-    <link rel="stylesheet" href="css/form-login.css" >
+    <link rel="stylesheet" href="css/form-registro.css" />
     <link rel="shortcut icon" href="img/logo-geopet.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/index.css">
 </head>
-<body>
+    <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" >
 
@@ -30,7 +30,7 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                      <a class="nav-link active " style='color:black' aria-current="page" href="index.html">Inicio</a>
+                      <a class="nav-link active " style='color:black' aria-current="page" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link"style='color:black' href="/beneficios.html">Sobre GeoPet</a>
@@ -39,9 +39,11 @@
                       <a class="nav-link"style='color:black' href="/contacto.html">Contactanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"style='color:black' href="/form-registro.html">Registro</a>
-                      </li>
-                    
+                    <a class="nav-link" style='color:black' href="form-registro.html">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" style='color:black' href="/form-login.html">Login</a>
+                    </li>
                     <li id="importante-link" class="nav-item">
                         <a class="nav-link resaltado-button" style='color:white; background-color: green; border-radius: 15px;' href="/suscripcion.html">Planes y suscripciones</a>
                       </li>
@@ -52,20 +54,43 @@
           </nav>
     </header>
     <main>
-            <div class="conteiner col-lg-12 " id="form-login">
-                <form class="form-horizontal  col-sm-12 col-md-3 col-lg-3" action="/login2.php" method="post" style="margin-left: 12%;">
-                    <div class="mb-3">
-                        <h3 id="titulo">Login</h3>
-                        <label for="exampleInputEmail1" class="form-label">Mail</label>
-                        <input name="correo_electronico" type="email" class="form-control" id="inputnombre" autocomplete="off" aria-describedby="emailHelp">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input name="contrasena" type="password" class="form-control" id="inputpassword">
-                        <div id="emailHelp" class="form-text">Si no está registrado, haga click en <a href="/form-registro.html">registrarse.</a></div><br>
-                        <div id="emailHelp" class="form-text">¿Olvidó su contraseña? Haga click en el botón <a href="/recuperar_contrasena.html">recuperar contraseña.</a></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="boton">Ingresar</button>
-                </form>
-            </div>
+
+    <?php
+
+        session_start();
+        
+        // Obtengo los datos cargados en el formulario de login.
+        $email = $_POST['correo_electronico'];
+        $password = $_POST['contrasena'];
+        
+        // Datos para conectar a la base de datos.
+        $nombreServidor = "localhost";
+        $nombreUsuario = "root";
+        $passwordBaseDeDatos = "miarka2020";
+        $nombreBaseDeDatos = "geopet";
+        
+        // Crear conexión con la base de datos.
+        $conn = new mysqli($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
+        
+        // Validar la conexión de base de datos.
+        if ($conn ->connect_error) {
+            die("Connection failed: " . $conn ->connect_error);
+        }
+        
+        // Consulta segura para evitar inyecciones SQL.
+        $sql = "SELECT * FROM cliente WHERE ('correo_electronico'='$email' AND 'contrasena'='$password')";
+        $resultado = $conn->query($sql);
+        
+        if($resultado){
+        echo "conexion exitosa";
+        header("http://127.0.0.1:5501/perfilusuario.html"); 
+        header("Location: perfilusuario.html");
+        } else{
+            echo 'El email o password es incorrecto, <a href="form-login.html">vuelva a intentarlo</a>.<br/>';
+          }
+        
+    ?>
+ 
     </main>
     <footer class="text-center footer-style">
         <div class="container">
@@ -86,7 +111,8 @@
                          <input type="email" class="form-control" placeholder="Ingresa tu mail">
                          <span class="input-group-btn">
                          <button class="btn btn-outline-light" type="submit">Suscribirse</button>
-                         </span>      
+                         </span>    
+                         
                 </div>
                 <div id="bloque-redes-sociales">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram social-media"  title="Instagram"></i></a> 
@@ -101,6 +127,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/funcionesGrupo2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
