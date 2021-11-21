@@ -78,7 +78,7 @@
             }
             
             $db = mysqli_select_db($con, $basededatos) or die ("Ups!, no se ha podido conectar a la base de datos");
-            $consulta = "INSERT INTO cliente VALUES (0 , '$nombre', '$apellido', '$correo_electronico', '$contrasena', 0)";
+            $consulta = "INSERT INTO cliente VALUES (0 , '$nombre', '$apellido', '$correo_electronico', '$contrasena', '$telefono')";
             
             if (mysqli_query ($con, $consulta)) {
                 echo "<p>Registro agregado.</p>";
