@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/index.css">
 </head>
-<body>
+    <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" >
 
@@ -38,7 +38,9 @@
                     <li class="nav-item">
                       <a class="nav-link"style='color:black' href="/contacto.html">Contactanos</a>
                     </li>
-                    
+                    <li class="nav-item">
+                    <a class="nav-link" style='color:black' href="form-registro.html">Registro</a>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link" style='color:black' href="/form-login.html">Login</a>
                     </li>
@@ -52,34 +54,41 @@
           </nav>
     </header>
     <main>
-        <section>
-            <div class="foto-mascota col-md-5" id="foto">
-                <img src="img/fotoregistrousuario.jpg" class=" foto-mascotas rounded float-start col-lg" alt="mascotas" id="foto-mascota">
-            </div>
-            <div class="conteiner col-lg-12 offset-md-7" id="form-registro">
-                <form class="form-horizontal col-sm-5 col-md-8 col-lg-3" style="margin-left: 3%;" id="form1" action="/envio-contacto.php" method="post">
-                    <div class="mb-3">
-                        <h3 id="titulo">Formulario de Registro</h3>
-                        <label for="exampleInputEmail1" class="form-label" id="nombre">Nombre</label>
-                        <input name="nombre" type="text" class="form-control" id="inputnombre" minlength="2" maxlength="20" aria-describedby="emailHelp" required>
-                        <label for="exampleInputEmail1" class="form-label" id="apellido">Apellido</label>
-                        <input name="apellido" type="text" class="form-control" id="inputapellido" minlength="2" maxlength="20" aria-describedby="emailHelp" required>
-                        <label for="exampleInputEmail1" class="form-label" id="telefono">Teléfono</label>
-                        <input name="telefono" type="tel" class="form-control" id="inputtelefono" min="3" max="15" aria-describedby="emailHelp" required>
-                        <label for="exampleInputEmail1" class="form-label" id="mail">Correo Electrónico</label>
-                        <input name="correo_electronico" type="email" class="form-control" id="inputmail" aria-describedby="emailHelp" required>
-                        
-                        <label for="exampleInputPassword1" class="form-label" id="password">Contraseña</label>
-                        <input name="contrasena" type="password" class="form-control" id="inputpassword" required>
-                        <label for="exampleInputPassword1" class="form-label" id="password2">Repita su Contraseña</label>
-                        <input name="repcontrasena" type="password" class="form-control" id="inputpassword2" required>
-                        <div id="emailHelp" class="form-text">Nunca compartiremos sus datos con nadie más</div>
-                    </div>
-                    <div id="alertboton"></div>
-                    <button name="registrarse" type="submit" class="btn btn-primary" id="boton" onclick="comprobar2()">Registrarse</button>
-                  </form>
-            </div>
-        </section>
+        <?php
+            @$nombre = $_POST["nombre"];
+            @$apellido = $_POST["apellido"];
+            @$correo_electronico = $_POST["correo_electronico"];
+            @$contrasena = $_POST["contrasena"];
+            @$telefono = $_POST["telefono"];
+            
+            $host="localhost";
+            $usuario="root";
+            $clave="miarka2020";
+            $basededatos="geopet";
+            
+            $conn = new mysqli($host, $usuario, $clave, $basededatos);
+                mysqli_query($conn , "  SET character_set_result=utf8");
+                if($conn->connect_error){
+                    die("Database Error : " . $conn->connect_error);
+                }
+            
+            $con = mysqli_connect($host, $usuario, $clave, $basededatos) or die ("No se ha podido conectar al servidor de Base de datos");
+            if (!$con) {
+                die ("Conexion fallida: " . mysqli_connect_error());
+            }
+            
+            $db = mysqli_select_db($con, $basededatos) or die ("Ups!, no se ha podido conectar a la base de datos");
+            $consulta = "INSERT INTO cliente VALUES (0 , '$nombre', '$apellido', '$correo_electronico', '$contrasena', 0)";
+            
+            if (mysqli_query ($con, $consulta)) {
+                echo "<p>Registro agregado.</p>";
+            } else {
+                echo "<p>No se agregó nuevo registro</p>";
+                echo "Error: " . $consulta . "<br>" . mysqli_error($con);
+            }
+            mysqli_close($con);
+        
+        ?>
     </main>
     <footer class="text-center footer-style">
         <div class="container">
@@ -118,5 +127,8 @@
     </footer>
     <script src="/js/funcionesGrupo2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
+
+
+
