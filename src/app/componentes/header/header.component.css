@@ -1,0 +1,46 @@
+/* header */
+
+header{
+    width: 100vw;
+    padding-right: 0;
+}
+.logo-nombre{
+    display: flex !important;
+}
+#form-login{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+  .navbar{
+    animation: bounce 0.5s;
+    font-family: 'Poppins', sans-serif;
+    background-color: #B4E79E !important;
+    color: black !important;
+    font-weight: 900;
+  }
+
+  
+  @keyframes bounce {
+      0% {
+          padding-bottom: 0px;
+      }
+      50% {
+          padding-bottom: 10px
+      }
+      100% {
+          padding-bottom: 0px;
+      }/**/
+  }
+
+  ul.nav a:hover { 
+      background-color: white;
+     }
+
+
+@media only screen and (min-width: 992px) {
+    header{
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,29 @@
+main{
+    padding: 0%;
+    height: 200%;
+    width: 100vw!important;
+}
+
+.carousel, .carousel-inner, .carousel-item, .img-fluid{
+    width: 100vw!important;
+}
+section{
+    display:flexbox;
+}
+#form-registro{
+    padding-top: 1%;
+}
+#titulo{
+    padding-top: 4%;
+}
+#boton{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+body {
+    overflow-x: hidden;
+}
+.navbar{
+    margin-top: 0%;
+    padding-right: 1%;
+}
