@@ -1,0 +1,21 @@
+{
+    "HEADER-NAV1" : "Home",
+    "HEADER-NAV2" : "About GeoPet",
+    "HEADER-NAV3" : "Contact us",
+    "HEADER-NAV4" : "Registrer",
+    "HEADER-NAV5" : "Login",
+    "HEADER-NAV6" : "Plans and Subscriptions",
+    "HEADER-NAV7" : "Change Language",
+    "MAIN-CARROUSEL1" : "Take care of your pet from your cell phone",
+    "MAIN-BUTTON1" : "Create your profile",
+    "MAIN-CARROUSEL2" : "I chose the plan that suits you",
+    "MAIN-BUTTON2" : "See plans",
+    "MAIN-CARROUSEL3" : "We offer you assistance 24/7",
+    "MAIN-BUTTON3" : "Testimonials",
+    "FOOTER1" : "Group 3",
+    "FOOTER2" : "Newsletters",
+    "FOOTER3" : "Enter your email",
+    "FOOTER-BUTTON" : "To subscribe",
+    "FOOTER-LEYEND" : "Follow your dog or feline friend from the comfort of your cell phone thanks to Geo PET. Register your pet with its Geotag number to see its exact location, at all times."
+    
+}

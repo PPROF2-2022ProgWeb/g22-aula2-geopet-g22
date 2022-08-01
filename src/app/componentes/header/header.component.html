@@ -7,25 +7,28 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        {{'HEADER-NAV7' | translate}} : <select #selLang (change)="translateLanguageTo(selLang.value)">
+          <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+        </select>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active " style='color:black' aria-current="page" href="/index.html">Inicio</a>
+              <a class="nav-link active " style='color:black' aria-current="page" href="/index.html">{{'HEADER-NAV1' | translate}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"style='color:black' href="/beneficios.html">Sobre GeoPet</a>
+              <a class="nav-link"style='color:black' href="/beneficios.html">{{'HEADER-NAV2' | translate}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"style='color:black' href="/contacto.html">Contactanos</a>
+              <a class="nav-link"style='color:black' href="/contacto.html">{{'HEADER-NAV3' | translate}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style='color:black' href="form-registro.html">Registro</a>
+              <a class="nav-link" style='color:black' href="form-registro.html">{{'HEADER-NAV4' | translate}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style='color:black' href="/form-login.html">Login</a>
+              <a class="nav-link" style='color:black' href="/form-login.html">{{'HEADER-NAV5' | translate}}</a>
             </li>
             <li id="importante-link" class="nav-item">
-              <a class="nav-link resaltado-button" style='color:white; background-color: green; border-radius: 15px;' href="/suscripcion.html">Planes y suscripciones</a>
+              <a class="nav-link resaltado-button" style='color:white; background-color: green; border-radius: 15px;' href="/suscripcion.html">{{'HEADER-NAV6' | translate}}</a>
             </li>
           </ul>
         </div>
