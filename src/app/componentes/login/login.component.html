@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div class="conteiner col-lg-12 " id="form-login">
+    <form class="form-horizontal  col-sm-12 col-md-3 col-lg-3" action="/login.php" method="post" style="margin-left: 12%;">
+        <div class="mb-3">
+            <h3 id="titulo">Login</h3>
+            <label for="exampleInputEmail1" class="form-label">Mail</label>
+            <input name="correo_electronico" type="email" class="form-control" id="inputnombre" autocomplete="off" aria-describedby="emailHelp">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input name="contrasena" type="password" class="form-control" id="inputpassword">
+            <div id="emailHelp" class="form-text">Si no está registrado, haga click en <a routerLink="/registro">registrarse.</a></div><br>
+            <div id="emailHelp" class="form-text">¿Olvidó su contraseña? Haga click en el botón <a href="/recuperar_contrasena.html">recuperar contraseña.</a></div>
+        </div>
+        <button type="submit" name="login"class="btn btn-primary" id="boton">Ingresar</button>
+    </form>
+</div>
+
+
+<app-footer></app-footer>

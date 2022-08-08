@@ -10,6 +10,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SobreGeopetComponent } from './componentes/sobre-geopet/sobre-geopet.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { PlanesComponent } from './componentes/planes/planes.component';
+import { RecuperacionComponent } from './componentes/recuperacion/recuperacion.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -20,7 +26,13 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    SobreGeopetComponent,
+    ContactoComponent,
+    RegistroComponent,
+    LoginComponent,
+    PlanesComponent,
+    RecuperacionComponent
   ],
   imports: [
     BrowserModule,
