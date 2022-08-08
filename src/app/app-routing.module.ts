@@ -7,6 +7,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PlanesComponent } from './componentes/planes/planes.component';
 import { RecuperacionComponent } from './componentes/recuperacion/recuperacion.component';
+import { RestablecerContrasenaComponent } from './componentes/restablecer-contrasena/restablecer-contrasena.component';
 
 const routes: Routes = [
   {path: 'inicio', component: PrincipalComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'planes', component: PlanesComponent},
   {path:'recuperacion', component: RecuperacionComponent},
+  {path:'restablecer-contrasena', component: RestablecerContrasenaComponent},
   {path:'', redirectTo: 'inicio', pathMatch: 'full'}
 ];
 

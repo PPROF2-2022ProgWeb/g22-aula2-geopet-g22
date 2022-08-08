@@ -16,6 +16,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PlanesComponent } from './componentes/planes/planes.component';
 import { RecuperacionComponent } from './componentes/recuperacion/recuperacion.component';
+import { RestablecerContrasenaComponent } from './componentes/restablecer-contrasena/restablecer-contrasena.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -32,7 +33,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     RegistroComponent,
     LoginComponent,
     PlanesComponent,
-    RecuperacionComponent
+    RecuperacionComponent,
+    RestablecerContrasenaComponent
   ],
   imports: [
     BrowserModule,
