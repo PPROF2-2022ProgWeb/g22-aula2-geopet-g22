@@ -16,6 +16,12 @@
     "FOOTER2" : "Newsletters",
     "FOOTER3" : "Enter your email",
     "FOOTER-BUTTON" : "To subscribe",
-    "FOOTER-LEYEND" : "Follow your dog or feline friend from the comfort of your cell phone thanks to Geo PET. Register your pet with its Geotag number to see its exact location, at all times."
+    "FOOTER-LEYEND" : "Follow your dog or feline friend from the comfort of your cell phone thanks to Geo PET. Register your pet with its Geotag number to see its exact location, at all times.",
+    "CONTACT-CONTACT": "Contact",
+    "CONTACT-NAME": "Name",
+    "CONTACT-EMAIL": "Email",
+    "CONTACT-PHONE": "Phone",
+    "CONTACT-MSJ":"Write here your comment or message",
+    "CONTACT-BUTTON" :"Submit"
     
 }

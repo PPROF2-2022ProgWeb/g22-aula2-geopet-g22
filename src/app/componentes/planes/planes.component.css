@@ -1,0 +1,141 @@
+h1,
+h2 {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(107, 177, 107);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color:  rgb(98, 156, 98);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:  rgb(98, 156, 98);
+   
+    padding: 0.5em;
+
+}
+
+
+h3 {
+    font-family: 'Noto Sans Mono', monospace;
+    text-transform: uppercase;
+    color: rgb(107, 177, 107);
+}
+
+nav {
+    color: black;
+    text-decoration: none;
+    background-color: #B4E79E !important;}
+
+li {
+    list-style: none;
+}
+
+.encabezado {
+height: 30vw;
+    background-repeat: no-repeat;
+    background: url(/g2-a3-g2/img/fondo-header.png) no-repeat center top fixed;
+    background-size: 100%;
+
+
+}
+
+
+
+
+.navbar {
+    animation: bounce 0.5s;
+    color: black !important;
+
+}
+
+
+@keyframes bounce {
+    0% {
+        padding-bottom: 0px;
+    }
+
+    50% {
+        padding-bottom: 10px
+    }
+
+    100% {
+        padding-bottom: 0px;
+    }
+
+    /**/
+}
+
+ul.nav a:hover {
+    background-color: white;
+}
+
+
+/* footer */
+
+.footer-style {
+    padding-top: 10px;
+    background-color: #2C3E50;
+    color: white;
+    width: 100vw;
+    font-size: 10px !important;
+
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+footer .footer-above {
+    padding-top: 2 0px;
+    background-color: #2C3E50;
+}
+
+footer .footer-col {
+    margin-bottom: 25px;
+}
+
+footer .footer-below {
+    padding: 0px 0;
+    background-color: #233140;
+}
+
+.input-group {
+    font-size: 10px !important;
+}
+
+#bloque-redes-sociales {
+    margin-top: 15px;
+    border: 15px;
+}
+
+.social-media:hover {
+    background-color: white;
+
+}
+
+.btn {
+    padding-left: 15;
+}
+
+main {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(/g2-a3-g2/img/fondo.png) no-repeat left bottom;
+    background-size: 50%;
+}
+
+footer svg {
+    color: #4da8cf;
+}
