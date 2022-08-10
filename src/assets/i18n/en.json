@@ -22,6 +22,26 @@
     "CONTACT-EMAIL": "Email",
     "CONTACT-PHONE": "Phone",
     "CONTACT-MSJ":"Write here your comment or message",
-    "CONTACT-BUTTON" :"Submit"
-    
+    "CONTACT-BUTTON" :"Submit",
+    "ABOUT-TITLE":"WHY CHOOSE OUR APP?",
+    "ABOUT-SUBTITLE1":"VISUALIZATION OF ALL YOUR PETS",
+    "ABOUT-SUBTITLE2":"REAL-TIME LOCATION",
+    "ABOUT-SUBTITLE3":"REMINDER OF WALKS",
+    "ABOUT-SUBTITLE4":"VET VISIT REMINDERS",
+    "ABOUT-SUBTITLE5":"FEEDING YOUR PETS",
+    "ABOUT-SUBTITLE6":"DISCOUNTS ON VETERINARIANS",
+    "ABOUT-PARAGRAPH1":"You can visualize all your pets at the same time in the same place.",
+    "ABOUT-PARAGRAPH2":"More precise so that you know at all times where your pet is",
+    "ABOUT-PARAGRAPH3":"So that you do not sleep and remember that your pet also deserves his moment of disconnection",
+    "ABOUT-PARAGRAPH4":"So that your card is up to date, to receive news about research and news that will make your pet's life healthier.",
+    "ABOUT-PARAGRAPH5":"That your pet respects the schedules of his meal is essential for his good health.",
+    "ABOUT-PARAGRAPH6":"Enjoy up to 50% off in selected stores.",
+    "ABOUT-TESTIMONIALS-TITLE":"TESTIMONIALS",
+    "ABOUT-TESTIMONIAL-SUB":"WHAT OUR USERS SAY ABOUT US",
+    "ABOUT-TESTIMONIAL1":"Great, it is an application where you will find what you need for your pet. It is an excellent option. I recommend it 100%",
+    "ABOUT-TESTIMONIAL2":"I loved it! The attention was excellent, the accuracy of the GPS and the records of the veterinarian made my life easier. Thank you GeoPet!",
+    "ABOUT-TESTIMONIAL3":"Very good app, everything I need for my pets. I recommend it, it has excellent service. It's super useful!",
+    "ABOUT-TESTIMONIAL4":"Very good service, very good idea. Super satisfied with my premium subscription.",
+    "ABOUT-TESTIMONIAL-FOOTER1":"Dog lover",
+    "ABOUT-TESTIMONIAL-FOOTER4":"Veterinarian"
 }
