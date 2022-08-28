@@ -1,0 +1,130 @@
+<app-header2></app-header2>
+
+<section>
+  <div class="foto-mascota col-md-5" id="foto">
+    <img
+      src="../../../assets/registro-mascota2.jpg"
+      class="foto-mascotas rounded float-start col-lg"
+      alt="mascotas"
+      id="foto-mascota"
+    />
+  </div>
+  <div class="container-fluid col-lg-12 offset-md-7" id="form-registro">
+    <form
+      class="form-horizontal col-sm-5 col-md-8 col-lg-3"
+      style="margin-left: 3%"
+      method="get"
+      action="mostrardatos.html"
+    >
+      <div class="mb-3">
+        <h3 id="titulo">Nueva Mascota</h3>
+
+        <label for="exampleInputEmail1" class="form-label" id="nombre"
+          >Nombre</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="inputnombre"
+          autocomplete="off"
+          aria-describedby="emailHelp"
+          name="name"
+          required
+        />
+
+        <label for="exampleDataList" class="form-label" id="tipo">Tipo</label>
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="inputtipo"
+          name="tipo"
+        >
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+        </select>
+
+        <label for="exampleDataList" class="form-label" id="genero"
+          >Género</label
+        >
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="inputgenero"
+          name="genero"
+        >
+          <option value="Hembra">Hembra</option>
+          <option value="Macho">Macho</option>
+        </select>
+
+        <label for="exampleInputEmail1" class="form-label" id="cumpleaños"
+          >Cumpleaños</label
+        >
+        <input
+          type="date"
+          class="form-control"
+          id="inputcumpleaños"
+          aria-describedby="emailHelp"
+          name="cumpleaños"
+          required
+        />
+
+        <label for="exampleDataList" class="form-label" id="castrado"
+          >Castrado</label
+        >
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="inputcastrado"
+          name="castrado"
+        >
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="exampleInputEmail1" class="form-label" id="chip"
+          >ID Chip</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="inputchip"
+          aria-describedby="emailHelp"
+          name="chip"
+          required
+        />
+
+        <label for="exampleInputPassword1" class="form-label" id="altura"
+          >Altura (en cm.)</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="inputaltura"
+          name="altura"
+          required
+        />
+
+        <label
+          for="exampleInputPassword1"
+          type="number"
+          class="form-label"
+          id="peso"
+          >Peso (en kg.)</label
+        >
+        <input type="number" class="form-control" id="inputpeso" name="peso" />
+      </div>
+      <div id="alertboton"></div>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        id="boton"
+        onclick="comprobar()"
+        value="enviardatos"
+      >
+        Registrar mascota
+      </button>
+    </form>
+  </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,57 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
+    <div class="container-fluid">
+      <div id="logo-nombre">
+        <a class="navbar-brand" routerLink="/perfil-usuario"
+          ><img
+            src="../../../assets/logo geo pet.png"
+            id="imagen-logo-header"
+            width="168"
+            height="76"
+            alt=""
+        /></a>
+        {{'HEADER-NAV7' | translate}} : <select #selLang (change)="translateLanguageTo(selLang.value)">
+          <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+        </select>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              style="color: black"
+              aria-current="page"
+              routerLink="/perfil-usuario"
+              >{{'HEADER2-NAV1' | translate}}</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black" routerLink="/perfil-mascota"
+              >{{'HEADER2-NAV2' | translate}}</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black" routerLink="/mapa">{{'HEADER2-NAV3' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black" routerLink="">{{'HEADER2-NAV4' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

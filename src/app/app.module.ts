@@ -17,6 +17,11 @@ import { LoginComponent } from './componentes/login/login.component';
 import { PlanesComponent } from './componentes/planes/planes.component';
 import { RecuperacionComponent } from './componentes/recuperacion/recuperacion.component';
 import { RestablecerContrasenaComponent } from './componentes/restablecer-contrasena/restablecer-contrasena.component';
+import { Header2Component } from './componentes/header2/header2.component';
+import { MapaComponent } from './componentes/mapa/mapa.component';
+import { PerfilMascotaComponent } from './componentes/perfil-mascota/perfil-mascota.component';
+import { PerfilUsuarioComponent } from './componentes/perfil-usuario/perfil-usuario.component';
+import { NuevaMascotaComponent } from './componentes/nueva-mascota/nueva-mascota.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,7 +39,12 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     LoginComponent,
     PlanesComponent,
     RecuperacionComponent,
-    RestablecerContrasenaComponent
+    RestablecerContrasenaComponent,
+    Header2Component,
+    MapaComponent,
+    PerfilMascotaComponent,
+    PerfilUsuarioComponent,
+    NuevaMascotaComponent
   ],
   imports: [
     BrowserModule,
